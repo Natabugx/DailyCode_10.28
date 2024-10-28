@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+string user;
+//function delcaration
+void verify_username();
+int main() {
+	string user;
+	cout << "Enter Username:" << endl;
+	cin >> user;
+	//function call
+	verify_username();
+}
+
+void verify_username() {
+	if (user == "CodeMaster123")
+		cout << "Access Granted" << endl;
+	else
+		cout << "Access Denied" << endl;
+}
